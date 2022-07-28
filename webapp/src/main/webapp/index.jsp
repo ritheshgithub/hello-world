@@ -4,13 +4,13 @@
 Registration Page
 </title>
 </head>
-<body bgcolor="orange">
+<body bgcolor="pink">
 <br>
 <br>
 <form>
 
 <label> Firstname </label>       
-<input type="text" name="firstname" size="25"/> <br> <br>
+<input type="text" name="firstname" size="30"/> <br> <br>
 <label> Middlename: </label>   
 <input type="text" name="middlename" size="15"/> <br> <br>
 <label> Lastname: </label>       
