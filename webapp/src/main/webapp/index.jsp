@@ -1,67 +1,24 @@
-<!DOCTYPE html>
-<html>
-<head>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<style>
-body{
-  font-family: Calibri, Helvetica, sans-serif;
-  background-color: pink;
-}
-.container {
-    padding: 50px;
-  background-color: lightblue;
-}
-
-input[type=text], input[type=password], textarea {
-  width: 100%;
-  padding: 15px;
-  margin: 5px 0 22px 0;
-  display: inline-block;
-  border: none;
-  background: #f1f1f1;
-}
-input[type=text]:focus, input[type=password]:focus {
-  background-color: orange;
-  outline: none;
-}
- div {
-            padding: 10px 0;
-         }
-hr {
-  border: 1px solid #f1f1f1;
-  margin-bottom: 25px;
-}
-.registerbtn {
-  background-color: #4CAF50;
-  color: white;
-  padding: 16px 20px;
-  margin: 8px 0;
-  border: none;
-  cursor: pointer;
-  width: 100%;
-  opacity: 0.9;
-}
-.registerbtn:hover {
-  opacity: 1;
-}
-</style>
+<Html>
+<head> 
+<title>
+Registration Page
+</title>
 </head>
-<body>
+<body bgcolor="Lightskyblue">
+<br>
+<br>
 <form>
-  <div class="container">
-  <center>  <h1> Student Registeration Form</h1> </center>
-  <hr>
-  <label> Firstname </label> 
-<input type="text" name="firstname" placeholder= "Firstname" size="15" required /> 
-<label> Middlename: </label> 
-<input type="text" name="middlename" placeholder="Middlename" size="15" required /> 
-<label> Lastname: </label>  
-<input type="text" name="lastname" placeholder="Lastname" size="15"required /> 
-<div>
+
+<label> Firstname </label>       
+<input type="text" name="firstname" size="15"/> <br> <br>
+<label> Middlename: </label>   
+<input type="text" name="middlename" size="15"/> <br> <br>
+<label> Lastname: </label>       
+<input type="text" name="lastname" size="15"/> <br> <br>
+
 <label> 
 Course :
 </label> 
-
 <select>
 <option value="Course">Course</option>
 <option value="BCA">BCA</option>
@@ -71,22 +28,23 @@ Course :
 <option value="MCA">MCA</option>
 <option value="M.Tech">M.Tech</option>
 </select>
-</div>
-<div>
+
+<br>
+<br>
 <label> 
 Gender :
 </label><br>
-<input type="radio" value="Male" name="gender" checked > Male 
-<input type="radio" value="Female" name="gender"> Female 
-<input type="radio" value="Other" name="gender"> Other
+<input type="radio" name="male"/> Male <br>
+<input type="radio" name="female"/> Female <br>
+<input type="radio" name="other"/> Other
+<br>
+<br>
 
-</div>
 <label> 
 Phone :
 </label>
-<input type="text" name="country code" placeholder="Country Code"  value="+91" size="2"/> 
-<input type="text" name="phone" placeholder="phone no." size="10"/ required> 
-Current Address :
-<textarea cols="80" rows="5" placeholder="Current Address" value="address" required>
-
-
+<input type="text" name="country code"  value="+91" size="2"/> 
+<input type="text" name="phone" size="10"/> <br> <br>
+Address
+<br>
+<textarea cols="80" rows="5" value="address">
