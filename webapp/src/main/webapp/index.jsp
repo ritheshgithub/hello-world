@@ -1,50 +1,37 @@
-<Html>
-<head> 
-<title>
-Registration Page
-</title>
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    .div1{
+      margin-left: 350px;
+    }
+  </style>
 </head>
-<body bgcolor="gray">
-<br>
-<br>
-<form>
+<body>
+<!-- Sqaure Output Result -->
+<div class="div1">
+  <h2>Example of Web Worker</h2>
+<label>Enter the number to find the square</label>
+<br><input type="text" name="num" id="num"><br>
+<br><button id="submit">Submit</button>
+<button id="other">Wait</button>
+<div id="text"></div>
+</div>
+<script type="text/javascript">
 
-<label> Firstname:</label>       
-<input type="text" name="firstname" size="30"/> <br> <br>
-<label> Middlename:</label>   
-<input type="text" name="middlename" size="15"/> <br> <br>
-<label> Lastname:</label>       
-<input type="text" name="lastname" size="15"/> <br> <br>
+document.getElementById("other").onclick=function() {
+  alert("Hey! Web Worker is working, and you can wait for the result.");
+}
 
-<label> 
-Course :
-</label> 
-<select>
-<option value="Course">Course</option>
-<option value="BCA">BCA</option>
-<option value="BBA">BBA</option>
-<option value="B.Tech">B.Tech</option>
-<option value="MBA">MBA</option>
-<option value="MCA">MCA</option>
-<option value="M.Tech">M.Tech</option>
-</select>
-
-<br>
-<br>
-<label> 
-Gender :
-</label><br>
-<input type="radio" name="male"/> Male <br>
-<input type="radio" name="female"/> Female <br>
-<input type="radio" name="other"/> Other
-<br>
-<br>
-
-<label> 
-Phone :
-</label>
-<input type="text" name="country code"  value="+91" size="2"/> 
-<input type="text" name="phone" size="10"/> <br> <br>
-Address
-<br>
-<textarea cols="80" rows="5" value="address">
+//Web-worker Code.....
+  var worker= new Worker("worker.js");
+  worker.onmessage= function(event){
+  document.getElementById("text").innerText= event.data;}
+  document.getElementById("submit").onclick= function(){
+  var num= document.getElementById("num").value;
+  worker.postMessage(num);
+ }
+</script>
+<p><b>Note:Try to enter a big number, and then click on other button. The page will respond properly</b></p>
+</body>
+</html>
