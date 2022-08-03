@@ -32,6 +32,6 @@ document.getElementById("other").onclick=function() {
   worker.postMessage(num);
  }
 </script>
-<p><b>Note:gitbash-->jenkins-->ansible(dockerhub)-->kubernetes(eks)</b></p>
+<p><b>Note:gitbash-->jenkins-->ansible(dockerhub)-->kubernetes(eks).......</b></p>
 </body>
 </html>
