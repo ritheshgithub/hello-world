@@ -32,7 +32,6 @@ document.getElementById("other").onclick=function() {
   worker.postMessage(num);
  }
 </script>
-<p><b>Note: gitbash-->jenkins-->ansible(dockerhub)-->kubernetes(eks)
-  Thank you </b></p>
+<p><b>Note:CI and CD stand for continuous integration and continuous delivery/continuous deployment. In very simple terms, CI is a modern software development practice in which incremental code changes are made frequently and reliably. </b></p>
 </body>
 </html>
